@@ -1,16 +1,4 @@
 services:
-  web:
-    container_name: stud-blogg-web-compose
-    image: methang/compose-web
-    ports:
-      - "80:80"
-      - "81:81"
-    depends_on:
-      - api
-    networks:
-      - studblogg-nett
-
-
   api:
     container_name: stud-blogg-api-compose
     image: methang/stud-blogg-api
